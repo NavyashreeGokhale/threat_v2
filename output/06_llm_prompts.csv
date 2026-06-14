@@ -1,0 +1,266 @@
+user_id,username,timestamp,risk_score,severity,llm_prompt
+USR00034,harsh.jones,2025-05-14 08:19:00,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: harsh.jones | Dept: Operations | Privilege: service-account | Inactive days: 43
+Event: admin_operation on HRIS (high sensitivity)
+Time: 2025-05-14 08:19:00 (unusual hours)
+Status: failure
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Accessed during unusual hours — this user only works off-hours 47% of the time, making this highly unusual
+  - Target resource 'HRIS' is classified high-sensitivity
+  - Accessing data 1.0 sensitivity levels above this user's typical access level
+  - First time this user has ever accessed 'HRIS'
+  - Administrative operation performed by non-admin account (privilege: service-account)
+  - Cross-department access: Operations user accessing 'HRIS', which is outside their department's typical systems
+  - Account was inactive for 43 days before this access (dormant account reactivation risk)
+  - Access attempt failed — possible credential probing or unauthorized access attempt"
+USR00039,stephen.bhat,2025-06-17 23:05:00,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: stephen.bhat | Dept: Engineering | Privilege: user | Inactive days: 25
+Event: export_data on Customer_Vault (high sensitivity)
+Time: 2025-06-17 23:05:00 (business hours)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Data export by a user who rarely exports (historical export rate: 12%)
+  - Target resource 'Customer_Vault' is classified high-sensitivity
+  - Accessing data 1.1 sensitivity levels above this user's typical access level
+  - First time this user has ever accessed 'Customer_Vault'
+  - Privilege mismatch: 'user'-tier user accessing high-sensitivity data
+  - Cross-department access: Engineering user accessing 'Customer_Vault', which is outside their department's typical systems"
+USR00004,diya.anderson,2025-06-16 19:57:00,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: diya.anderson | Dept: Marketing | Privilege: user | Inactive days: 14
+Event: admin_operation on GL_System (high sensitivity)
+Time: 2025-06-16 19:57:00 (night)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Accessed during night — this user only works off-hours 43% of the time, making this highly unusual
+  - Target resource 'GL_System' is classified high-sensitivity
+  - First time this user has ever accessed 'GL_System'
+  - Privilege mismatch: 'user'-tier user accessing high-sensitivity data
+  - Administrative operation performed by non-admin account (privilege: user)
+  - Cross-department access: Marketing user accessing 'GL_System', which is outside their department's typical systems"
+USR00076,stephen.guo,2026-04-19 10:54:05,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: stephen.guo | Dept: Finance | Privilege: user | Inactive days: 8
+Event: admin_operation on HRIS (high sensitivity)
+Time: 2026-04-19 10:54:05 (unusual hours)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Accessed during unusual hours — this user only works off-hours 21% of the time, making this highly unusual
+  - Target resource 'HRIS' is classified high-sensitivity
+  - Accessing data 0.9 sensitivity levels above this user's typical access level
+  - First time this user has ever accessed 'HRIS'
+  - Privilege mismatch: 'user'-tier user accessing high-sensitivity data
+  - Administrative operation performed by non-admin account (privilege: user)
+  - Cross-department access: Finance user accessing 'HRIS', which is outside their department's typical systems"
+USR00048,xiulan.colombo,2025-04-23 06:57:00,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: xiulan.colombo | Dept: Compliance | Privilege: user | Inactive days: 34
+Event: export_data on GL_System (high sensitivity)
+Time: 2025-04-23 06:57:00 (weekend)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Data export by a user who rarely exports (historical export rate: 11%)
+  - Target resource 'GL_System' is classified high-sensitivity
+  - Accessing data 0.9 sensitivity levels above this user's typical access level
+  - First time this user has ever accessed 'GL_System'
+  - Privilege mismatch: 'user'-tier user accessing high-sensitivity data
+  - Account was inactive for 34 days before this access (dormant account reactivation risk)"
+USR00057,zainab.jo,2025-05-04 15:55:00,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: zainab.jo | Dept: Sales | Privilege: admin | Inactive days: 14
+Event: export_data on Customer_Vault (high sensitivity)
+Time: 2025-05-04 15:55:00 (unusual hours)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Accessed during unusual hours — this user only works off-hours 25% of the time, making this highly unusual
+  - Data export by a user who rarely exports (historical export rate: 25%)
+  - Target resource 'Customer_Vault' is classified high-sensitivity
+  - Accessing data 0.9 sensitivity levels above this user's typical access level
+  - First time this user has ever accessed 'Customer_Vault'"
+USR00050,nisha.martinez,2025-11-05 16:14:00,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: nisha.martinez | Dept: HR | Privilege: user | Inactive days: 25
+Event: export_data on Customer_Vault (high sensitivity)
+Time: 2025-11-05 16:14:00 (night)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Accessed during night — this user only works off-hours 36% of the time, making this highly unusual
+  - Data export by a user who rarely exports (historical export rate: 7%)
+  - Target resource 'Customer_Vault' is classified high-sensitivity
+  - Accessing data 0.6 sensitivity levels above this user's typical access level
+  - First time this user has ever accessed 'Customer_Vault'
+  - Privilege mismatch: 'user'-tier user accessing high-sensitivity data
+  - Cross-department access: HR user accessing 'Customer_Vault', which is outside their department's typical systems"
+USR00097,leila.lopez,2025-10-29 05:42:00,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: leila.lopez | Dept: IT | Privilege: user | Inactive days: 43
+Event: admin_operation on GL_System (high sensitivity)
+Time: 2025-10-29 05:42:00 (night)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Accessed during night — this user only works off-hours 31% of the time, making this highly unusual
+  - Target resource 'GL_System' is classified high-sensitivity
+  - Accessing data 0.5 sensitivity levels above this user's typical access level
+  - Privilege mismatch: 'user'-tier user accessing high-sensitivity data
+  - Administrative operation performed by non-admin account (privilege: user)
+  - Cross-department access: IT user accessing 'GL_System', which is outside their department's typical systems
+  - Account was inactive for 43 days before this access (dormant account reactivation risk)"
+USR00006,kevin.ramirez,2026-02-16 10:54:06,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: kevin.ramirez | Dept: Legal | Privilege: power-user | Inactive days: 46
+Event: admin_operation on BI_Tool (low sensitivity)
+Time: 2026-02-16 10:54:06 (business hours)
+Status: failure
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - First time this user has ever accessed 'BI_Tool'
+  - Cross-department access: Legal user accessing 'BI_Tool', which is outside their department's typical systems
+  - Account was inactive for 46 days before this access (dormant account reactivation risk)
+  - Access attempt failed — possible credential probing or unauthorized access attempt"
+USR00083,ryan.thomas,2026-02-16 10:54:06,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: ryan.thomas | Dept: Marketing | Privilege: service-account | Inactive days: 17
+Event: admin_operation on File_Share (low sensitivity)
+Time: 2026-02-16 10:54:06 (night)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Accessed during night — this user only works off-hours 11% of the time, making this highly unusual
+  - Administrative operation performed by non-admin account (privilege: service-account)"
+USR00030,yuki.meyer,2026-02-16 10:54:06,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: yuki.meyer | Dept: Marketing | Privilege: service-account | Inactive days: 24
+Event: admin_operation on Customer_Vault (high sensitivity)
+Time: 2026-02-16 10:54:06 (business hours)
+Status: failure
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Target resource 'Customer_Vault' is classified high-sensitivity
+  - Administrative operation performed by non-admin account (privilege: service-account)
+  - Access attempt failed — possible credential probing or unauthorized access attempt"
+USR00045,stephen.kumar,2026-02-27 10:54:06,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: stephen.kumar | Dept: Security | Privilege: user | Inactive days: 26
+Event: export_data on SIEM (medium sensitivity)
+Time: 2026-02-27 10:54:06 (business hours)
+Status: failure
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Data export by a user who rarely exports (historical export rate: 22%)
+  - First time this user has ever accessed 'SIEM'
+  - Access attempt failed — possible credential probing or unauthorized access attempt"
+USR00004,diya.anderson,2026-02-27 10:54:06,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: diya.anderson | Dept: Marketing | Privilege: user | Inactive days: 14
+Event: export_data on PROD_DB (high sensitivity)
+Time: 2026-02-27 10:54:06 (unusual hours)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Accessed during unusual hours — this user only works off-hours 43% of the time, making this highly unusual
+  - Data export by a user who rarely exports (historical export rate: 29%)
+  - Target resource 'PROD_DB' is classified high-sensitivity
+  - Privilege mismatch: 'user'-tier user accessing high-sensitivity data
+  - Cross-department access: Marketing user accessing 'PROD_DB', which is outside their department's typical systems"
+USR00095,priya.petit,2026-02-27 10:54:05,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: priya.petit | Dept: HR | Privilege: user | Inactive days: 20
+Event: export_data on Admin_Console (medium sensitivity)
+Time: 2026-02-27 10:54:05 (business hours)
+Status: failure
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Data export by a user who rarely exports (historical export rate: 17%)
+  - First time this user has ever accessed 'Admin_Console'
+  - Cross-department access: HR user accessing 'Admin_Console', which is outside their department's typical systems
+  - Access attempt failed — possible credential probing or unauthorized access attempt"
+USR00024,nicholas.jackson,2025-11-19 10:19:00,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: nicholas.jackson | Dept: Compliance | Privilege: user | Inactive days: 31
+Event: admin_operation on GL_System (high sensitivity)
+Time: 2025-11-19 10:19:00 (business hours)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Target resource 'GL_System' is classified high-sensitivity
+  - Accessing data 0.5 sensitivity levels above this user's typical access level
+  - First time this user has ever accessed 'GL_System'
+  - Privilege mismatch: 'user'-tier user accessing high-sensitivity data
+  - Administrative operation performed by non-admin account (privilege: user)
+  - Account was inactive for 31 days before this access (dormant account reactivation risk)"
+USR00091,steven.thompson,2025-10-24 17:59:00,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: steven.thompson | Dept: Support | Privilege: power-user | Inactive days: 26
+Event: admin_operation on PROD_DB (high sensitivity)
+Time: 2025-10-24 17:59:00 (business hours)
+Status: failure
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Target resource 'PROD_DB' is classified high-sensitivity
+  - Accessing data 0.8 sensitivity levels above this user's typical access level
+  - First time this user has ever accessed 'PROD_DB'
+  - Cross-department access: Support user accessing 'PROD_DB', which is outside their department's typical systems
+  - Access attempt failed — possible credential probing or unauthorized access attempt"
+USR00011,maria.o'brien,2025-10-16 19:11:00,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: maria.o'brien | Dept: Security | Privilege: user | Inactive days: 16
+Event: admin_operation on PROD_DB (high sensitivity)
+Time: 2025-10-16 19:11:00 (weekend)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Target resource 'PROD_DB' is classified high-sensitivity
+  - Accessing data 1.0 sensitivity levels above this user's typical access level
+  - First time this user has ever accessed 'PROD_DB'
+  - Privilege mismatch: 'user'-tier user accessing high-sensitivity data
+  - Administrative operation performed by non-admin account (privilege: user)
+  - Cross-department access: Security user accessing 'PROD_DB', which is outside their department's typical systems"
+USR00005,george.lim,2026-02-26 10:54:05,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: george.lim | Dept: Engineering | Privilege: user | Inactive days: 57
+Event: admin_operation on File_Share (low sensitivity)
+Time: 2026-02-26 10:54:05 (unusual hours)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Accessed during unusual hours — this user only works off-hours 20% of the time, making this highly unusual
+  - First time this user has ever accessed 'File_Share'
+  - Administrative operation performed by non-admin account (privilege: user)
+  - Account was inactive for 57 days before this access (dormant account reactivation risk)"
+USR00042,kenneth.sanchez,2025-07-20 04:53:00,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: kenneth.sanchez | Dept: Support | Privilege: user | Inactive days: 46
+Event: admin_operation on BI_Tool (low sensitivity)
+Time: 2025-07-20 04:53:00 (night)
+Status: success
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Access during night
+  - First time this user has ever accessed 'BI_Tool'
+  - Administrative operation performed by non-admin account (privilege: user)
+  - Cross-department access: Support user accessing 'BI_Tool', which is outside their department's typical systems
+  - Account was inactive for 46 days before this access (dormant account reactivation risk)"
+USR00046,deepika.li,2026-03-27 10:54:05,100.0,CRITICAL,"You are a senior cybersecurity analyst. Write a concise 2-3 sentence incident narrative for the following data access event, explaining the risk to a non-technical manager. End with a clear recommended action.
+
+User: deepika.li | Dept: Support | Privilege: user | Inactive days: 48
+Event: sql_query on GL_System (high sensitivity)
+Time: 2026-03-27 10:54:05 (business hours)
+Status: failure
+Risk score: 100/100 | Severity: CRITICAL
+Anomaly signals detected:
+  - Target resource 'GL_System' is classified high-sensitivity
+  - Accessing data 0.7 sensitivity levels above this user's typical access level
+  - Privilege mismatch: 'user'-tier user accessing high-sensitivity data
+  - Cross-department access: Support user accessing 'GL_System', which is outside their department's typical systems
+  - Account was inactive for 48 days before this access (dormant account reactivation risk)
+  - Access attempt failed — possible credential probing or unauthorized access attempt"

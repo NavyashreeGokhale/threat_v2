@@ -1,7 +1,7 @@
 # 🛡️ InsiderPulse — Data Access Audit & Insider Threat Detection
 **Problem Statement 04 | Option A: Behavioral ML + Explainable Narratives + DLP Integration**
 
-🔗 **Live Demo:** https://insiderpulse.streamlit.app
+🔗 **Live Demo:** https://insider-threat-v2.streamlit.app/
 
 ---
 
